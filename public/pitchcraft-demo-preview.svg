@@ -1,0 +1,59 @@
+<svg width="1440" height="900" viewBox="0 0 1440 900" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">PitchCraft product preview</title>
+  <desc id="desc">A visual preview of the PitchCraft website showing the hero, pitch builder, readiness score, slide outline, and export tools.</desc>
+  <rect width="1440" height="900" fill="#F6FBFF"/>
+  <circle cx="194" cy="108" r="260" fill="#DBEAFE"/>
+  <circle cx="1190" cy="166" r="240" fill="#CCFBF1"/>
+  <rect x="110" y="54" width="1220" height="70" rx="35" fill="white" stroke="#DBE8F6" stroke-width="2"/>
+  <image href="/pitchcraft-logo.svg" x="144" y="73" width="172" height="40"/>
+  <text x="626" y="96" fill="#64748B" font-family="Inter, system-ui, sans-serif" font-size="18" font-weight="700" text-anchor="middle">Builder</text>
+  <text x="724" y="96" fill="#64748B" font-family="Inter, system-ui, sans-serif" font-size="18" font-weight="700" text-anchor="middle">Slides</text>
+  <text x="820" y="96" fill="#64748B" font-family="Inter, system-ui, sans-serif" font-size="18" font-weight="700" text-anchor="middle">Export</text>
+  <rect x="1134" y="70" width="152" height="38" rx="19" fill="#2563EB"/>
+  <text x="1210" y="95" fill="white" font-family="Inter, system-ui, sans-serif" font-size="15" font-weight="800" text-anchor="middle">Export pitch</text>
+
+  <text x="118" y="226" fill="#2563EB" font-family="Inter, system-ui, sans-serif" font-size="16" font-weight="900" letter-spacing="3">BUILT FOR BUILD BEYOND TEAMS</text>
+  <text x="118" y="304" fill="#08111F" font-family="Inter, system-ui, sans-serif" font-size="72" font-weight="900" letter-spacing="-4">Turn your hackathon</text>
+  <text x="118" y="382" fill="#08111F" font-family="Inter, system-ui, sans-serif" font-size="72" font-weight="900" letter-spacing="-4">idea into a pitch</text>
+  <text x="118" y="460" fill="#08111F" font-family="Inter, system-ui, sans-serif" font-size="72" font-weight="900" letter-spacing="-4">judges understand.</text>
+  <text x="118" y="522" fill="#5B6B82" font-family="Inter, system-ui, sans-serif" font-size="24" font-weight="500">AI-assisted pitch writing, slide design directions, snapshots,</text>
+  <text x="118" y="556" fill="#5B6B82" font-family="Inter, system-ui, sans-serif" font-size="24" font-weight="500">Markdown export, and PDF export in one focused web app.</text>
+  <rect x="118" y="600" width="174" height="50" rx="25" fill="#2563EB"/>
+  <text x="205" y="632" fill="white" font-family="Inter, system-ui, sans-serif" font-size="17" font-weight="850" text-anchor="middle">Start building</text>
+  <rect x="310" y="600" width="172" height="50" rx="25" fill="white" stroke="#DCE8F6"/>
+  <text x="396" y="632" fill="#163152" font-family="Inter, system-ui, sans-serif" font-size="17" font-weight="850" text-anchor="middle">Download PDF</text>
+
+  <g transform="translate(800 178)">
+    <rect width="500" height="428" rx="28" fill="white" stroke="#DBE8F6" stroke-width="2"/>
+    <rect width="500" height="52" rx="28" fill="#F8FAFC"/>
+    <circle cx="32" cy="26" r="6" fill="#F97316"/>
+    <circle cx="52" cy="26" r="6" fill="#EAB308"/>
+    <circle cx="72" cy="26" r="6" fill="#22C55E"/>
+    <rect x="150" y="14" width="210" height="24" rx="12" fill="white" stroke="#DBE8F6"/>
+    <text x="255" y="31" fill="#50627A" font-family="Inter, system-ui, sans-serif" font-size="13" font-weight="800" text-anchor="middle">pitchcraft.dev/builder</text>
+    <image href="/pitchcraft-mark.svg" x="30" y="82" width="54" height="54"/>
+    <text x="102" y="103" fill="#0F766E" font-family="Inter, system-ui, sans-serif" font-size="12" font-weight="900">CURRENT PITCH</text>
+    <text x="102" y="134" fill="#08111F" font-family="Inter, system-ui, sans-serif" font-size="34" font-weight="900">TradeFlow</text>
+    <rect x="374" y="82" width="86" height="72" rx="20" fill="#2563EB"/>
+    <text x="417" y="116" fill="white" font-family="Inter, system-ui, sans-serif" font-size="28" font-weight="900" text-anchor="middle">100%</text>
+    <text x="417" y="137" fill="white" font-family="Inter, system-ui, sans-serif" font-size="12" font-weight="800" text-anchor="middle">ready</text>
+    <text x="30" y="190" fill="#5B6B82" font-family="Inter, system-ui, sans-serif" font-size="17">A smarter trading journal that helps traders track decisions,</text>
+    <text x="30" y="216" fill="#5B6B82" font-family="Inter, system-ui, sans-serif" font-size="17">analyze performance, and improve discipline.</text>
+    <rect x="30" y="250" width="440" height="62" rx="16" fill="#F8FBFF" stroke="#DBE8F6"/>
+    <text x="50" y="276" fill="#2563EB" font-family="Inter, system-ui, sans-serif" font-size="12" font-weight="900">PROBLEM</text>
+    <text x="50" y="298" fill="#40536B" font-family="Inter, system-ui, sans-serif" font-size="15">Traders do not track why trades win or fail.</text>
+    <rect x="30" y="326" width="440" height="62" rx="16" fill="#F8FBFF" stroke="#DBE8F6"/>
+    <text x="50" y="352" fill="#2563EB" font-family="Inter, system-ui, sans-serif" font-size="12" font-weight="900">SOLUTION</text>
+    <text x="50" y="374" fill="#40536B" font-family="Inter, system-ui, sans-serif" font-size="15">A focused journal for review, risk, and discipline.</text>
+  </g>
+
+  <rect x="118" y="724" width="370" height="98" rx="24" fill="white" stroke="#DBE8F6"/>
+  <text x="146" y="764" fill="#08111F" font-family="Inter, system-ui, sans-serif" font-size="22" font-weight="900">AI pitch improvement</text>
+  <text x="146" y="796" fill="#5B6B82" font-family="Inter, system-ui, sans-serif" font-size="17">Tightens project copy for judges.</text>
+  <rect x="534" y="724" width="370" height="98" rx="24" fill="white" stroke="#DBE8F6"/>
+  <text x="562" y="764" fill="#08111F" font-family="Inter, system-ui, sans-serif" font-size="22" font-weight="900">Designed slide outline</text>
+  <text x="562" y="796" fill="#5B6B82" font-family="Inter, system-ui, sans-serif" font-size="17">Generates layout and speaker notes.</text>
+  <rect x="950" y="724" width="370" height="98" rx="24" fill="white" stroke="#DBE8F6"/>
+  <text x="978" y="764" fill="#08111F" font-family="Inter, system-ui, sans-serif" font-size="22" font-weight="900">Markdown and PDF export</text>
+  <text x="978" y="796" fill="#5B6B82" font-family="Inter, system-ui, sans-serif" font-size="17">Ready for Devpost and presentations.</text>
+</svg>

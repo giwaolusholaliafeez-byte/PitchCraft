@@ -6,6 +6,12 @@ PitchCraft is a web app that helps hackathon builders turn a rough project idea 
 
 Turn your hackathon idea into a clear, judge-ready pitch in minutes.
 
+## Submission Materials
+
+- Build Beyond submission checklist: [`SUBMISSION.md`](SUBMISSION.md)
+- Product preview visual: [`public/pitchcraft-demo-preview.svg`](public/pitchcraft-demo-preview.svg)
+- Source repository: [giwaolusholaliafeez-byte/PitchCraft](https://github.com/giwaolusholaliafeez-byte/PitchCraft)
+
 ## Why PitchCraft Exists
 
 Hackathon teams often build useful products but struggle to explain them clearly before submission time. PitchCraft solves that final-hour storytelling problem by helping builders describe the problem, audience, solution, features, technical stack, impact, presentation flow, and next steps in one focused workspace.
