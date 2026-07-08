@@ -1,66 +1,63 @@
 # PitchCraft
 
-PitchCraft is a Build Beyond hackathon project that helps builders turn a rough idea into a clear, judge-ready pitch. It guides users through the problem, audience, solution, features, tech stack, impact, presentation plan, and next steps, then generates a presentation outline and Markdown export.
+PitchCraft is a web app that helps hackathon builders turn a rough project idea into a clear, judge-ready pitch. It guides users through the story, improves the pitch with AI, generates a presentation outline, creates slide design directions, and exports the result as Markdown or PDF.
 
-## The Idea
+## Elevator Pitch
 
-Hackathon teams often build useful projects but lose points because their presentation is rushed or unclear. PitchCraft was inspired by that final-hour pressure: teams need a fast way to explain what they built, why it matters, how it works, and what judges should pay attention to during the presentation.
+Turn your hackathon idea into a clear, judge-ready pitch in minutes.
 
-## How It Works
+## Why PitchCraft Exists
 
-Users fill in guided pitch fields. PitchCraft validates whether each section is strong enough, calculates a readiness score, generates a five-slide outline, saves pitch snapshots locally, and exports a Markdown summary that can be pasted into Devpost or used as presentation notes.
+Hackathon teams often build useful products but struggle to explain them clearly before submission time. PitchCraft solves that final-hour storytelling problem by helping builders describe the problem, audience, solution, features, technical stack, impact, presentation flow, and next steps in one focused workspace.
 
-PitchCraft runs in the browser with `localStorage`, so deployed users can create and save drafts without an account.
+## Features
 
-## Main Features
-
-- Guided pitch builder for hackathon project storytelling
-- Readiness score based on complete pitch sections
-- Live checklist showing what still needs detail
-- Auto-generated five-slide presentation outline
-- Backend AI assistant for improving pitches
-- Backend AI slide designer for slide layout, visual direction, and speaker notes
+- Guided pitch builder for project storytelling
+- Live readiness score based on completed pitch sections
+- Judge-focused checklist for missing pitch details
+- Five-slide presentation outline generated from the pitch
+- Backend AI assistant for improving pitch quality
+- Backend AI slide designer with layout, visual direction, and speaker notes
 - Saved pitch snapshots for trying alternate angles
-- Markdown file export for Devpost, scripts, or presentation notes
-- PDF export for the current pitch and saved pitch snapshots
-- Responsive website UI for screenshots and walkthrough videos
+- Markdown export for Devpost, README files, or speaker notes
+- PDF export for the current pitch and saved snapshots
+- Local draft persistence with `localStorage`
+- Custom PitchCraft logo and favicon assets
+- Responsive website UI for desktop and mobile
 
-## Technology Stack
+## Tech Stack
 
 - React
 - TypeScript
 - Vite
 - CSS
-- LocalStorage
 - Node.js HTTP server
+- Vercel serverless functions
 - OpenAI Responses API
+- LocalStorage
+- jsPDF
 - Vitest
 - Oxlint
 
-## Intended Audience
+## How It Works
 
-PitchCraft is designed for Build Beyond participants, beginner hackers, student teams, solo builders, mentors, and anyone who needs to communicate a technical project clearly under hackathon time pressure.
+PitchCraft keeps the main pitch data in a typed TypeScript model. The frontend uses that model to calculate readiness, generate slide outlines, save snapshots, and export files.
 
-## Visual Materials
+AI features are handled server-side. The browser calls internal API routes, and the server calls OpenAI using `OPENAI_API_KEY`. The key is never exposed to the frontend.
 
-Use screenshots or a short walkthrough showing:
+## Project Structure
 
-- Editing the project pitch fields
-- The readiness score changing
-- The pitch checklist
-- Generated slide outline
-- Saving a pitch snapshot
-- Exporting Markdown
+```text
+api/                  Vercel serverless AI routes
+public/               Logo, favicon, and brand image assets
+server/               Shared AI backend logic and local production server
+src/domain/           Pitch, AI, and storage domain types/utilities
+src/services/         Frontend AI and export services
+src/App.tsx           Main PitchCraft UI
+src/App.css           Product website styling
+```
 
-## Brand Assets
-
-- Full logo: `public/pitchcraft-logo.svg`
-- App icon/favicon: `public/pitchcraft-mark.svg`
-- Wide PNG logo: `public/pitchcraft-logo-wide.png`
-- Square PNG logo: `public/pitchcraft-logo.png`
-- Square PNG app icon: `public/pitchcraft-mark.png`
-
-## Source Code or Live Site
+## Getting Started
 
 Install dependencies:
 
@@ -68,52 +65,60 @@ Install dependencies:
 npm install
 ```
 
-Run the development server:
+Run the frontend development server:
 
 ```bash
 npm run dev
 ```
 
-Build and serve the production preview:
+Build the full app:
 
 ```bash
 npm run build
+```
+
+Run the production server locally:
+
+```bash
 npm start
 ```
 
-AI features require a server-side OpenAI key:
+## AI Setup
+
+Create a local environment file:
 
 ```bash
 cp .env.example .env
-# add your OPENAI_API_KEY value
-npm run build
-npm start
 ```
 
-Set these environment variables on your deployment platform:
+Set your OpenAI key:
 
 ```text
-OPENAI_API_KEY=your_api_key
+OPENAI_API_KEY=your_real_openai_key
 OPENAI_MODEL=gpt-5.4-mini
 PORT=4173
 ```
 
-The frontend never receives the API key. AI requests go through:
+AI endpoints:
 
 - `POST /api/ai/improve-pitch`
 - `POST /api/ai/generate-slides`
 
-Verify the project:
+Do not expose the OpenAI key as a `VITE_` variable. It must stay server-side.
 
-```bash
-npm test
-npm run lint
-npm run build
-```
+## Exports
 
-## Deploying to Vercel
+Users can export:
 
-This project is Vercel-ready.
+- Markdown `.md` pitch summary
+- PDF pitch document
+- PDF files from saved snapshots
+
+If AI slide designs are generated, the current pitch PDF also includes design directions and speaker notes.
+
+## Deployment
+
+PitchCraft is ready for Vercel.
 
 Vercel settings:
 
@@ -123,23 +128,39 @@ Build Command: npm run build:client
 Output Directory: dist
 ```
 
-Required environment variables:
+Required Vercel environment variables:
 
 ```text
 OPENAI_API_KEY=your_real_openai_key
 OPENAI_MODEL=gpt-5.4-mini
 ```
 
-The AI endpoints run as Vercel serverless functions:
+## Verification
 
-- `/api/ai/improve-pitch`
-- `/api/ai/generate-slides`
+Run:
 
-Do not expose `OPENAI_API_KEY` as a `VITE_` variable. It must stay server-side.
+```bash
+npm test
+npm run lint
+npm run build
+```
+
+## Brand Assets
+
+- Full SVG logo: `public/pitchcraft-logo.svg`
+- SVG app icon: `public/pitchcraft-mark.svg`
+- Wide PNG logo: `public/pitchcraft-logo-wide.png`
+- Square PNG logo: `public/pitchcraft-logo.png`
+- PNG app icon: `public/pitchcraft-mark.png`
 
 ## Team Information
 
 Solo submission:
 
-- Solo Builder: product idea, TypeScript pitch logic, React interface, responsive styling, tests, and documentation.
-# PitchCraft
+- Product idea
+- TypeScript pitch logic
+- React interface
+- Backend AI routes
+- PDF and Markdown export
+- Responsive website UI
+- Testing and documentation
